@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.mscheduler.model.ScheduleTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec <<< FAILURE!
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
 testAddImportantParticipant(com.mscheduler.model.ScheduleTest)  Time elapsed: 0 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: expected:<7> but was:<1>
 	at junit.framework.Assert.fail(Assert.java:47)

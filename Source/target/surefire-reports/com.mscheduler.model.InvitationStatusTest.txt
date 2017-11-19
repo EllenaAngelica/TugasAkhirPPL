@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: com.mscheduler.model.InvitationStatusTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.035 sec <<< FAILURE!
-testValues(com.mscheduler.model.InvitationStatusTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-junit.framework.AssertionFailedError: expected:<null> but was:<[Lcom.mscheduler.model.InvitationStatus;@239963d8>
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
+testValues(com.mscheduler.model.InvitationStatusTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<null> but was:<[Lcom.mscheduler.model.InvitationStatus;@3abbfa04>
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.failNotEquals(Assert.java:280)
 	at junit.framework.Assert.assertEquals(Assert.java:64)

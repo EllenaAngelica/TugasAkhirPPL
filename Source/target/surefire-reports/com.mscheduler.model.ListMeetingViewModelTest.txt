@@ -1,22 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: com.mscheduler.model.ListMeetingViewModelTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
 testGetMeeting_id(com.mscheduler.model.ListMeetingViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.mscheduler.model.ListMeetingViewModelTest.testGetMeeting_id(ListMeetingViewModelTest.java:25)
-testSetMeeting_id(com.mscheduler.model.ListMeetingViewModelTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testSetMeeting_title(com.mscheduler.model.ListMeetingViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.mscheduler.model.ListMeetingViewModelTest.testSetMeeting_title(ListMeetingViewModelTest.java:63)
+testSetMeetingStatus(com.mscheduler.model.ListMeetingViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.mscheduler.model.ListMeetingViewModelTest.testSetMeetingStatus(ListMeetingViewModelTest.java:88)
+testSetMeeting_id(com.mscheduler.model.ListMeetingViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.mscheduler.model.ListMeetingViewModelTest.testSetMeeting_id(ListMeetingViewModelTest.java:38)
 testGetMeeting_title(com.mscheduler.model.ListMeetingViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.mscheduler.model.ListMeetingViewModelTest.testGetMeeting_title(ListMeetingViewModelTest.java:50)
-testSetMeeting_title(com.mscheduler.model.ListMeetingViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NullPointerException
-	at com.mscheduler.model.ListMeetingViewModelTest.testSetMeeting_title(ListMeetingViewModelTest.java:63)
 testGetMeeting_status(com.mscheduler.model.ListMeetingViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.mscheduler.model.ListMeetingViewModelTest.testGetMeeting_status(ListMeetingViewModelTest.java:75)
-testSetMeetingStatus(com.mscheduler.model.ListMeetingViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NullPointerException
-	at com.mscheduler.model.ListMeetingViewModelTest.testSetMeetingStatus(ListMeetingViewModelTest.java:88)

@@ -1,17 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: com.mscheduler.model.ListInvitationViewModelTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE!
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
 testGetMeeting_id(com.mscheduler.model.ListInvitationViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.mscheduler.model.ListInvitationViewModelTest.testGetMeeting_id(ListInvitationViewModelTest.java:25)
-testSetMeeting_id(com.mscheduler.model.ListInvitationViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NullPointerException
-	at com.mscheduler.model.ListInvitationViewModelTest.testSetMeeting_id(ListInvitationViewModelTest.java:38)
-testGetMeeting_title(com.mscheduler.model.ListInvitationViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NullPointerException
-	at com.mscheduler.model.ListInvitationViewModelTest.testGetMeeting_title(ListInvitationViewModelTest.java:50)
-testSetMeeting_title(com.mscheduler.model.ListInvitationViewModelTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testSetMeeting_title(com.mscheduler.model.ListInvitationViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.mscheduler.model.ListInvitationViewModelTest.testSetMeeting_title(ListInvitationViewModelTest.java:63)
 testGetInvitation_status(com.mscheduler.model.ListInvitationViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
@@ -20,3 +14,9 @@ java.lang.NullPointerException
 testSetInvitation_status(com.mscheduler.model.ListInvitationViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.mscheduler.model.ListInvitationViewModelTest.testSetInvitation_status(ListInvitationViewModelTest.java:88)
+testSetMeeting_id(com.mscheduler.model.ListInvitationViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.mscheduler.model.ListInvitationViewModelTest.testSetMeeting_id(ListInvitationViewModelTest.java:38)
+testGetMeeting_title(com.mscheduler.model.ListInvitationViewModelTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.mscheduler.model.ListInvitationViewModelTest.testGetMeeting_title(ListInvitationViewModelTest.java:50)
