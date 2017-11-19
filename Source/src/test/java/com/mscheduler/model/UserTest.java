@@ -1,23 +1,36 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.mscheduler.model;
 
-import junit.framework.TestCase;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  *
- * @author
- * Ellena Angelica (2015730029)
- * Billy Adiwijaya (2015730053)
- * Yosua (2015730067)
+ * @author Lenovo Iyoss
  */
-public class UserTest extends TestCase {
+public class UserTest {
     
-    public UserTest(String testName) {
-        super(testName);
+    public UserTest() {
+    }
+    
+    @BeforeClass
+    public static void setUpClass() {
+    }
+    
+    @AfterClass
+    public static void tearDownClass() {
     }
 
     /**
      * Test of getEmail method, of class User.
      */
+    @Test
     public void testGetEmail() {
         System.out.println("getEmail");
         User instance = new User();
@@ -31,6 +44,7 @@ public class UserTest extends TestCase {
     /**
      * Test of setEmail method, of class User.
      */
+    @Test
     public void testSetEmail() {
         System.out.println("setEmail");
         String email = "";
@@ -43,6 +57,7 @@ public class UserTest extends TestCase {
     /**
      * Test of getPassword method, of class User.
      */
+    @Test
     public void testGetPassword() {
         System.out.println("getPassword");
         User instance = new User();
@@ -56,6 +71,7 @@ public class UserTest extends TestCase {
     /**
      * Test of setPassword method, of class User.
      */
+    @Test
     public void testSetPassword() {
         System.out.println("setPassword");
         String password = "";
@@ -68,6 +84,7 @@ public class UserTest extends TestCase {
     /**
      * Test of getName method, of class User.
      */
+    @Test
     public void testGetName() {
         System.out.println("getName");
         User instance = new User();
@@ -81,6 +98,7 @@ public class UserTest extends TestCase {
     /**
      * Test of setName method, of class User.
      */
+    @Test
     public void testSetName() {
         System.out.println("setName");
         String name = "";
@@ -93,6 +111,7 @@ public class UserTest extends TestCase {
     /**
      * Test of isIsAdmin method, of class User.
      */
+    @Test
     public void testIsIsAdmin() {
         System.out.println("isIsAdmin");
         User instance = new User();
@@ -106,6 +125,7 @@ public class UserTest extends TestCase {
     /**
      * Test of setIsAdmin method, of class User.
      */
+    @Test
     public void testSetIsAdmin() {
         System.out.println("setIsAdmin");
         boolean isAdmin = false;
@@ -118,6 +138,7 @@ public class UserTest extends TestCase {
     /**
      * Test of saving method, of class User.
      */
+    @Test
     public void testSaving() {
         System.out.println("saving");
         User instance = new User();
@@ -131,6 +152,7 @@ public class UserTest extends TestCase {
     /**
      * Test of readUser method, of class User.
      */
+    @Test
     public void testReadUser() {
         System.out.println("readUser");
         User instance = new User();
@@ -144,6 +166,7 @@ public class UserTest extends TestCase {
     /**
      * Test of BooleanReadUser method, of class User.
      */
+    @Test
     public void testBooleanReadUser() {
         System.out.println("BooleanReadUser");
         String input = "";
@@ -158,6 +181,7 @@ public class UserTest extends TestCase {
     /**
      * Test of BooleanReadPass method, of class User.
      */
+    @Test
     public void testBooleanReadPass() {
         System.out.println("BooleanReadPass");
         String email = "";
@@ -173,6 +197,7 @@ public class UserTest extends TestCase {
     /**
      * Test of readUserOne method, of class User.
      */
+    @Test
     public void testReadUserOne() {
         System.out.println("readUserOne");
         String email = "";
@@ -187,6 +212,7 @@ public class UserTest extends TestCase {
     /**
      * Test of encr method, of class User.
      */
+    @Test
     public void testEncr() {
         System.out.println("encr");
         String text = "";
@@ -201,6 +227,7 @@ public class UserTest extends TestCase {
     /**
      * Test of checkLoginDb method, of class User.
      */
+    @Test
     public void testCheckLoginDb() {
         System.out.println("checkLoginDb");
         User usr = null;
@@ -215,6 +242,7 @@ public class UserTest extends TestCase {
     /**
      * Test of lastAdmin method, of class User.
      */
+    @Test
     public void testLastAdmin() {
         System.out.println("lastAdmin");
         User instance = new User();
@@ -228,6 +256,7 @@ public class UserTest extends TestCase {
     /**
      * Test of editAll method, of class User.
      */
+    @Test
     public void testEditAll() {
         System.out.println("editAll");
         User usr = null;
@@ -242,6 +271,7 @@ public class UserTest extends TestCase {
     /**
      * Test of editOne method, of class User.
      */
+    @Test
     public void testEditOne() {
         System.out.println("editOne");
         String condition = "";
@@ -257,6 +287,7 @@ public class UserTest extends TestCase {
     /**
      * Test of readAll method, of class User.
      */
+    @Test
     public void testReadAll() {
         System.out.println("readAll");
         User instance = new User();
@@ -270,6 +301,7 @@ public class UserTest extends TestCase {
     /**
      * Test of del method, of class User.
      */
+    @Test
     public void testDel() {
         System.out.println("del");
         User instance = new User();
@@ -283,6 +315,7 @@ public class UserTest extends TestCase {
     /**
      * Test of checkdel method, of class User.
      */
+    @Test
     public void testCheckdel() {
         System.out.println("checkdel");
         String Email = "";
