@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.mscheduler.model.InvitationStatusTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.035 sec <<< FAILURE!
+testValues(com.mscheduler.model.InvitationStatusTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<null> but was:<[Lcom.mscheduler.model.InvitationStatus;@239963d8>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.mscheduler.model.InvitationStatusTest.testValues(InvitationStatusTest.java:25)
+testValueOf(com.mscheduler.model.InvitationStatusTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.IllegalArgumentException: No enum constant com.mscheduler.model.InvitationStatus.
+	at java.lang.Enum.valueOf(Enum.java:238)
+	at com.mscheduler.model.InvitationStatus.valueOf(InvitationStatus.java:3)
+	at com.mscheduler.model.InvitationStatusTest.testValueOf(InvitationStatusTest.java:37)

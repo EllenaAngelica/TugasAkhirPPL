@@ -1,0 +1,129 @@
+-------------------------------------------------------------------------------
+Test set: com.mscheduler.model.UserTest
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 18, Errors: 3, Skipped: 0, Time elapsed: 0.676 sec <<< FAILURE!
+testBooleanReadUser(com.mscheduler.model.UserTest)  Time elapsed: 0.241 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testBooleanReadUser(UserTest.java:155)
+testBooleanReadPass(com.mscheduler.model.UserTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testBooleanReadPass(UserTest.java:170)
+testSetEmail(com.mscheduler.model.UserTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testSetEmail(UserTest.java:40)
+testGetPassword(com.mscheduler.model.UserTest)  Time elapsed: 0.014 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testGetPassword(UserTest.java:53)
+testGetEmail(com.mscheduler.model.UserTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testGetEmail(UserTest.java:28)
+testSetPassword(com.mscheduler.model.UserTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testSetPassword(UserTest.java:65)
+testGetName(com.mscheduler.model.UserTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testGetName(UserTest.java:78)
+testSetName(com.mscheduler.model.UserTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testSetName(UserTest.java:90)
+testIsIsAdmin(com.mscheduler.model.UserTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testIsIsAdmin(UserTest.java:103)
+testSetIsAdmin(com.mscheduler.model.UserTest)  Time elapsed: 0.011 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testSetIsAdmin(UserTest.java:115)
+testSaving(com.mscheduler.model.UserTest)  Time elapsed: 0.11 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<false> but was:<true>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:146)
+	at junit.framework.Assert.assertEquals(Assert.java:152)
+	at com.mscheduler.model.UserTest.testSaving(UserTest.java:126)
+testReadUser(com.mscheduler.model.UserTest)  Time elapsed: 0.064 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<null> but was:<com.mscheduler.model.User@6ec8211c>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.mscheduler.model.UserTest.testReadUser(UserTest.java:139)
+testReadUserOne(com.mscheduler.model.UserTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<null> but was:<com.mscheduler.model.User@544a2ea6>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.mscheduler.model.UserTest.testReadUserOne(UserTest.java:182)
+testEncr(com.mscheduler.model.UserTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[]> but was:<[d41d8cd98f00b204e9800998ecf8427e]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.mscheduler.model.UserTest.testEncr(UserTest.java:196)
+testCheckLoginDb(com.mscheduler.model.UserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.mscheduler.model.User.checkLoginDb(User.java:206)
+	at com.mscheduler.model.UserTest.testCheckLoginDb(UserTest.java:209)
+testLastAdmin(com.mscheduler.model.UserTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testLastAdmin(UserTest.java:225)
+testEditAll(com.mscheduler.model.UserTest)  Time elapsed: 0.065 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.mscheduler.model.User.editAll(User.java:261)
+	at com.mscheduler.model.UserTest.testEditAll(UserTest.java:236)
+testEditOne(com.mscheduler.model.UserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.mscheduler.model.User.editOne(User.java:287)
+	at com.mscheduler.model.UserTest.testEditOne(UserTest.java:251)
+testReadAll(com.mscheduler.model.UserTest)  Time elapsed: 0.136 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[]> but was:<[admin@ms.com
+user1@ms.com
+user2@ms.com
+user3@ms.com
+user4@ms.com
+user5@ms.com
+user6@ms.com
+user7@ms.com
+user8@ms.com
+user9@ms.com
+user10@ms.com
+user11@ms.com
+user12@ms.com
+user13@ms.com
+user14@ms.com
+user15@ms.com
+user16@ms.com
+user17@ms.com
+user18@ms.com
+user19@ms.com
+user20@ms.com
+]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.mscheduler.model.UserTest.testReadAll(UserTest.java:265)
+testDel(com.mscheduler.model.UserTest)  Time elapsed: 0.013 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<false> but was:<true>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:146)
+	at junit.framework.Assert.assertEquals(Assert.java:152)
+	at com.mscheduler.model.UserTest.testDel(UserTest.java:278)
+testCheckdel(com.mscheduler.model.UserTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<false> but was:<true>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:146)
+	at junit.framework.Assert.assertEquals(Assert.java:152)
+	at com.mscheduler.model.UserTest.testCheckdel(UserTest.java:292)

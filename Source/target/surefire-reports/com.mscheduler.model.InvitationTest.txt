@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------
+Test set: com.mscheduler.model.InvitationTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 8, Errors: 1, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE!
+testGetTo(com.mscheduler.model.InvitationTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<> but was:<null>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.mscheduler.model.InvitationTest.testGetTo(InvitationTest.java:52)
+testSetTo(com.mscheduler.model.InvitationTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.InvitationTest.testSetTo(InvitationTest.java:66)
+testGetStatus(com.mscheduler.model.InvitationTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.InvitationTest.testGetStatus(InvitationTest.java:116)
+testSetStatus(com.mscheduler.model.InvitationTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.InvitationTest.testSetStatus(InvitationTest.java:128)
+testGetMeeting_id(com.mscheduler.model.InvitationTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.InvitationTest.testGetMeeting_id(InvitationTest.java:29)
+testSetMeeting_id(com.mscheduler.model.InvitationTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.InvitationTest.testSetMeeting_id(InvitationTest.java:41)
+testGetAvailability(com.mscheduler.model.InvitationTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.InvitationTest.testGetAvailability(InvitationTest.java:79)
+testSetAvailability(com.mscheduler.model.InvitationTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.InvitationTest.testSetAvailability(InvitationTest.java:91)
+testAddAvailability(com.mscheduler.model.InvitationTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.mscheduler.model.Invitation.addAvailability(Invitation.java:49)
+	at com.mscheduler.model.InvitationTest.testAddAvailability(InvitationTest.java:101)

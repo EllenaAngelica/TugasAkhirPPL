@@ -1,0 +1,119 @@
+-------------------------------------------------------------------------------
+Test set: com.mscheduler.model.MeetingTest
+-------------------------------------------------------------------------------
+Tests run: 28, Failures: 24, Errors: 4, Skipped: 0, Time elapsed: 0.534 sec <<< FAILURE!
+testToString(com.mscheduler.model.MeetingTest)  Time elapsed: 0.318 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.mscheduler.model.Meeting.toString(Meeting.java:64)
+	at com.mscheduler.model.MeetingTest.testToString(MeetingTest.java:27)
+testGetStatus(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testGetStatus(MeetingTest.java:334)
+testSetStatus(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testSetStatus(MeetingTest.java:346)
+testGetId(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testGetId(MeetingTest.java:84)
+testSetId(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testSetId(MeetingTest.java:96)
+testGetTitle(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<> but was:<null>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.mscheduler.model.MeetingTest.testGetTitle(MeetingTest.java:107)
+testSetTitle(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testSetTitle(MeetingTest.java:121)
+testGetAgenda(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<> but was:<null>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.mscheduler.model.MeetingTest.testGetAgenda(MeetingTest.java:132)
+testSetAgenda(com.mscheduler.model.MeetingTest)  Time elapsed: 0.199 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testSetAgenda(MeetingTest.java:171)
+testGetLocation(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<> but was:<null>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.mscheduler.model.MeetingTest.testGetLocation(MeetingTest.java:182)
+testSetLocation(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testSetLocation(MeetingTest.java:196)
+testGetDuration(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testGetDuration(MeetingTest.java:209)
+testSetDuration(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testSetDuration(MeetingTest.java:221)
+testIsPastDeadline(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.mscheduler.model.Meeting.isPastDeadline(Meeting.java:92)
+	at com.mscheduler.model.MeetingTest.testIsPastDeadline(MeetingTest.java:40)
+testIsImportantParticipant(com.mscheduler.model.MeetingTest)  Time elapsed: 0.011 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.mscheduler.model.Meeting.isImportantParticipant(Meeting.java:101)
+	at com.mscheduler.model.MeetingTest.testIsImportantParticipant(MeetingTest.java:54)
+testIsNormalParticipant(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.mscheduler.model.Meeting.isNormalParticipant(Meeting.java:111)
+	at com.mscheduler.model.MeetingTest.testIsNormalParticipant(MeetingTest.java:68)
+testGetPastDeadline(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testGetPastDeadline(MeetingTest.java:147)
+testSetPastDeadline(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testSetPastDeadline(MeetingTest.java:159)
+testGetProposed_date_range(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testGetProposed_date_range(MeetingTest.java:234)
+testSetProposed_date_range(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testSetProposed_date_range(MeetingTest.java:246)
+testGetNegotiation_deadline(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testGetNegotiation_deadline(MeetingTest.java:259)
+testSetNegotiation_deadline(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testSetNegotiation_deadline(MeetingTest.java:271)
+testGetParticipants(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testGetParticipants(MeetingTest.java:284)
+testSetParticipants(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testSetParticipants(MeetingTest.java:296)
+testGetImportant_participants(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testGetImportant_participants(MeetingTest.java:309)
+testSetImportant_participants(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testSetImportant_participants(MeetingTest.java:321)
+testGetAgreed_time(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testGetAgreed_time(MeetingTest.java:359)
+testSetAgreed_time(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.MeetingTest.testSetAgreed_time(MeetingTest.java:371)

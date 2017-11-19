@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.mscheduler.model.ScheduleTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec <<< FAILURE!
+testAddImportantParticipant(com.mscheduler.model.ScheduleTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<7> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at com.mscheduler.model.ScheduleTest.testAddImportantParticipant(ScheduleTest.java:91)
+testAddParticipant(com.mscheduler.model.ScheduleTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<7> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at com.mscheduler.model.ScheduleTest.testAddParticipant(ScheduleTest.java:100)
+testGetTotalParticipant(com.mscheduler.model.ScheduleTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<6> but was:<0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at com.mscheduler.model.ScheduleTest.testGetTotalParticipant(ScheduleTest.java:111)

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="21" failures="18" name="com.mscheduler.model.UserTest" time="0.677" errors="3" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_102\jre\bin"/>
+    <property name="java.vm.version" value="25.102-b14"/>
+    <property name="user.country.format" value="ID"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Github\TugasAkhirPPL\Source"/>
+    <property name="java.runtime.version" value="1.8.0_102-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_102\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Angelica\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.0.2\java\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_102\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Angelica"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Angelica"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans 8.0.2\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_102\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="user.language.format" value="id"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_102"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_102\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_102\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_102\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_102\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans 8.0.2\java\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.mscheduler.model.UserTest" name="testBooleanReadUser" time="0.241">
+    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testBooleanReadUser(UserTest.java:155)
+</failure>
+    <system-out>BooleanReadUser
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testBooleanReadPass" time="0">
+    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testBooleanReadPass(UserTest.java:170)
+</failure>
+    <system-out>BooleanReadPass
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testSetEmail" time="0">
+    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testSetEmail(UserTest.java:40)
+</failure>
+    <system-out>setEmail
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testGetPassword" time="0.014">
+    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testGetPassword(UserTest.java:53)
+</failure>
+    <system-out>getPassword
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testGetEmail" time="0">
+    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testGetEmail(UserTest.java:28)
+</failure>
+    <system-out>getEmail
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testSetPassword" time="0">
+    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testSetPassword(UserTest.java:65)
+</failure>
+    <system-out>setPassword
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testGetName" time="0">
+    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testGetName(UserTest.java:78)
+</failure>
+    <system-out>getName
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testSetName" time="0">
+    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testSetName(UserTest.java:90)
+</failure>
+    <system-out>setName
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testIsIsAdmin" time="0.001">
+    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testIsIsAdmin(UserTest.java:103)
+</failure>
+    <system-out>isIsAdmin
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testSetIsAdmin" time="0.011">
+    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testSetIsAdmin(UserTest.java:115)
+</failure>
+    <system-out>setIsAdmin
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testSaving" time="0.11">
+    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:146)
+	at junit.framework.Assert.assertEquals(Assert.java:152)
+	at com.mscheduler.model.UserTest.testSaving(UserTest.java:126)
+</failure>
+    <system-out>saving
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testReadUser" time="0.064">
+    <failure message="expected:&lt;null&gt; but was:&lt;com.mscheduler.model.User@6ec8211c&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;null&gt; but was:&lt;com.mscheduler.model.User@6ec8211c&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.mscheduler.model.UserTest.testReadUser(UserTest.java:139)
+</failure>
+    <system-out>readUser
+</system-out>
+    <system-err>Nov 19, 2017 5:38:09 PM com.mscheduler.model.User readUser
+SEVERE: null
+com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of com.mscheduler.model.User out of START_ARRAY token
+ at [Source: data\user.json; line: 1, column: 1]
+	at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:270)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportMappingException(DeserializationContext.java:1234)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1122)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1075)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromArray(BeanDeserializerBase.java:1374)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:174)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:150)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3798)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2740)
+	at com.mscheduler.model.User.readUser(User.java:100)
+	at com.mscheduler.model.UserTest.testReadUser(UserTest.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:164)
+	at junit.framework.TestCase.runBare(TestCase.java:130)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:120)
+	at junit.framework.TestSuite.runTest(TestSuite.java:230)
+	at junit.framework.TestSuite.run(TestSuite.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.junit.JUnitTestSet.execute(JUnitTestSet.java:96)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:117)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+</system-err>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testReadUserOne" time="0">
+    <failure message="expected:&lt;null&gt; but was:&lt;com.mscheduler.model.User@544a2ea6&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;null&gt; but was:&lt;com.mscheduler.model.User@544a2ea6&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.mscheduler.model.UserTest.testReadUserOne(UserTest.java:182)
+</failure>
+    <system-out>readUserOne
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testEncr" time="0">
+    <failure message="expected:&lt;[]&gt; but was:&lt;[d41d8cd98f00b204e9800998ecf8427e]&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[d41d8cd98f00b204e9800998ecf8427e]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.mscheduler.model.UserTest.testEncr(UserTest.java:196)
+</failure>
+    <system-out>encr
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testCheckLoginDb" time="0">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.mscheduler.model.User.checkLoginDb(User.java:206)
+	at com.mscheduler.model.UserTest.testCheckLoginDb(UserTest.java:209)
+</error>
+    <system-out>checkLoginDb
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testLastAdmin" time="0">
+    <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
+	at junit.framework.Assert.fail(Assert.java:47)
+	at com.mscheduler.model.UserTest.testLastAdmin(UserTest.java:225)
+</failure>
+    <system-out>lastAdmin
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testEditAll" time="0.065">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.mscheduler.model.User.editAll(User.java:261)
+	at com.mscheduler.model.UserTest.testEditAll(UserTest.java:236)
+</error>
+    <system-out>editAll
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testEditOne" time="0">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.mscheduler.model.User.editOne(User.java:287)
+	at com.mscheduler.model.UserTest.testEditOne(UserTest.java:251)
+</error>
+    <system-out>editOne
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testReadAll" time="0.136">
+    <failure message="expected:&lt;[]&gt; but was:&lt;[admin@ms.com
+user1@ms.com
+user2@ms.com
+user3@ms.com
+user4@ms.com
+user5@ms.com
+user6@ms.com
+user7@ms.com
+user8@ms.com
+user9@ms.com
+user10@ms.com
+user11@ms.com
+user12@ms.com
+user13@ms.com
+user14@ms.com
+user15@ms.com
+user16@ms.com
+user17@ms.com
+user18@ms.com
+user19@ms.com
+user20@ms.com
+
+]&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[admin@ms.com
+user1@ms.com
+user2@ms.com
+user3@ms.com
+user4@ms.com
+user5@ms.com
+user6@ms.com
+user7@ms.com
+user8@ms.com
+user9@ms.com
+user10@ms.com
+user11@ms.com
+user12@ms.com
+user13@ms.com
+user14@ms.com
+user15@ms.com
+user16@ms.com
+user17@ms.com
+user18@ms.com
+user19@ms.com
+user20@ms.com
+]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.mscheduler.model.UserTest.testReadAll(UserTest.java:265)
+</failure>
+    <system-out>readAll
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testDel" time="0.013">
+    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:146)
+	at junit.framework.Assert.assertEquals(Assert.java:152)
+	at com.mscheduler.model.UserTest.testDel(UserTest.java:278)
+</failure>
+    <system-out>del
+</system-out>
+  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testCheckdel" time="0.016">
+    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:146)
+	at junit.framework.Assert.assertEquals(Assert.java:152)
+	at com.mscheduler.model.UserTest.testCheckdel(UserTest.java:292)
+</failure>
+    <system-out>checkdel
+</system-out>
+  </testcase>
+</testsuite>
