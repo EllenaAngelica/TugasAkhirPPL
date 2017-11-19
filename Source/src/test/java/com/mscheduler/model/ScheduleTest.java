@@ -60,6 +60,14 @@ public class ScheduleTest extends TestCase {
         instance = new Schedule(meeting, date);
     }
 
+    @org.junit.BeforeClass
+    public static void setUpClass() throws Exception {
+    }
+
+    @org.junit.AfterClass
+    public static void tearDownClass() throws Exception {
+    }
+
     /**
      * Test of getDate method, of class Schedule.
      */
