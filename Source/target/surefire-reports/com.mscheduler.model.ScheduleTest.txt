@@ -1,13 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.mscheduler.model.ScheduleTest
 -------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec <<< FAILURE!
-testGetTotalParticipant(com.mscheduler.model.ScheduleTest)  Time elapsed: 0 sec  <<< FAILURE!
-=======
-Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.659 sec <<< FAILURE!
-testGetTotalParticipant(com.mscheduler.model.ScheduleTest)  Time elapsed: 0.074 sec  <<< FAILURE!
->>>>>>> b51e10c8c605adf1d66f3f6184db945301a36175
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec <<< FAILURE!
+testGetTotalParticipant(com.mscheduler.model.ScheduleTest)  Time elapsed: 0.022 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: expected:<6> but was:<0>
 	at junit.framework.Assert.fail(Assert.java:57)
 	at junit.framework.Assert.failNotEquals(Assert.java:329)
@@ -15,11 +10,7 @@ junit.framework.AssertionFailedError: expected:<6> but was:<0>
 	at junit.framework.Assert.assertEquals(Assert.java:234)
 	at junit.framework.Assert.assertEquals(Assert.java:241)
 	at junit.framework.TestCase.assertEquals(TestCase.java:409)
-<<<<<<< HEAD
-	at com.mscheduler.model.ScheduleTest.testGetTotalParticipant(ScheduleTest.java:119)
-=======
 	at com.mscheduler.model.ScheduleTest.testGetTotalParticipant(ScheduleTest.java:121)
->>>>>>> b51e10c8c605adf1d66f3f6184db945301a36175
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -45,11 +36,7 @@ junit.framework.AssertionFailedError: expected:<6> but was:<0>
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-<<<<<<< HEAD
-testAddParticipant(com.mscheduler.model.ScheduleTest)  Time elapsed: 0.016 sec  <<< FAILURE!
-=======
 testAddParticipant(com.mscheduler.model.ScheduleTest)  Time elapsed: 0.001 sec  <<< FAILURE!
->>>>>>> b51e10c8c605adf1d66f3f6184db945301a36175
 junit.framework.AssertionFailedError: expected:<7> but was:<1>
 	at junit.framework.Assert.fail(Assert.java:57)
 	at junit.framework.Assert.failNotEquals(Assert.java:329)
@@ -57,11 +44,7 @@ junit.framework.AssertionFailedError: expected:<7> but was:<1>
 	at junit.framework.Assert.assertEquals(Assert.java:234)
 	at junit.framework.Assert.assertEquals(Assert.java:241)
 	at junit.framework.TestCase.assertEquals(TestCase.java:409)
-<<<<<<< HEAD
-	at com.mscheduler.model.ScheduleTest.testAddParticipant(ScheduleTest.java:108)
-=======
 	at com.mscheduler.model.ScheduleTest.testAddParticipant(ScheduleTest.java:110)
->>>>>>> b51e10c8c605adf1d66f3f6184db945301a36175
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -87,7 +70,7 @@ junit.framework.AssertionFailedError: expected:<7> but was:<1>
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testAddImportantParticipant(com.mscheduler.model.ScheduleTest)  Time elapsed: 0 sec  <<< FAILURE!
+testAddImportantParticipant(com.mscheduler.model.ScheduleTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: expected:<7> but was:<1>
 	at junit.framework.Assert.fail(Assert.java:57)
 	at junit.framework.Assert.failNotEquals(Assert.java:329)
@@ -95,11 +78,7 @@ junit.framework.AssertionFailedError: expected:<7> but was:<1>
 	at junit.framework.Assert.assertEquals(Assert.java:234)
 	at junit.framework.Assert.assertEquals(Assert.java:241)
 	at junit.framework.TestCase.assertEquals(TestCase.java:409)
-<<<<<<< HEAD
-	at com.mscheduler.model.ScheduleTest.testAddImportantParticipant(ScheduleTest.java:99)
-=======
 	at com.mscheduler.model.ScheduleTest.testAddImportantParticipant(ScheduleTest.java:101)
->>>>>>> b51e10c8c605adf1d66f3f6184db945301a36175
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
