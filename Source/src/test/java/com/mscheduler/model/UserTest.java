@@ -12,11 +12,16 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Lenovo Iyoss
+ * @author
+ * Ellena Angelica (2015730029)
+ * Billy Adiwijaya (2015730053)
+ * Yosua (2015730067)
  */
 public class UserTest {
+    User instance;
     
     public UserTest() {
+        instance = new User("email@gmail.com");
     }
     
     @BeforeClass
@@ -33,12 +38,9 @@ public class UserTest {
     @Test
     public void testGetEmail() {
         System.out.println("getEmail");
-        User instance = new User();
-        String expResult = "";
+        String expResult = "email@gmail.com";
         String result = instance.getEmail();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -47,11 +49,9 @@ public class UserTest {
     @Test
     public void testSetEmail() {
         System.out.println("setEmail");
-        String email = "";
-        User instance = new User();
+        String email = "change@gmail.com";
         instance.setEmail(email);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(email, instance.getEmail());
     }
 
     /**
@@ -60,12 +60,9 @@ public class UserTest {
     @Test
     public void testGetPassword() {
         System.out.println("getPassword");
-        User instance = new User();
         String expResult = "";
         String result = instance.getPassword();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -74,11 +71,9 @@ public class UserTest {
     @Test
     public void testSetPassword() {
         System.out.println("setPassword");
-        String password = "";
-        User instance = new User();
+        String password = "password";
         instance.setPassword(password);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(password, instance.getPassword());
     }
 
     /**
@@ -87,12 +82,9 @@ public class UserTest {
     @Test
     public void testGetName() {
         System.out.println("getName");
-        User instance = new User();
         String expResult = "";
         String result = instance.getName();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -101,11 +93,10 @@ public class UserTest {
     @Test
     public void testSetName() {
         System.out.println("setName");
-        String name = "";
+        String name = "user";
         User instance = new User();
         instance.setName(name);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(name, instance.getName());
     }
 
     /**
@@ -114,12 +105,9 @@ public class UserTest {
     @Test
     public void testIsIsAdmin() {
         System.out.println("isIsAdmin");
-        User instance = new User();
         boolean expResult = false;
         boolean result = instance.isIsAdmin();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -128,11 +116,9 @@ public class UserTest {
     @Test
     public void testSetIsAdmin() {
         System.out.println("setIsAdmin");
-        boolean isAdmin = false;
-        User instance = new User();
+        boolean isAdmin = true;
         instance.setIsAdmin(isAdmin);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(true, instance.isIsAdmin());
     }
 
     /**
@@ -141,12 +127,9 @@ public class UserTest {
     @Test
     public void testSaving() {
         System.out.println("saving");
-        User instance = new User();
-        boolean expResult = false;
+        boolean expResult = true;
         boolean result = instance.saving();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -155,12 +138,9 @@ public class UserTest {
     @Test
     public void testReadUser() {
         System.out.println("readUser");
-        User instance = new User();
-        User expResult = null;
-        User result = instance.readUser();
+        String expResult = "";
+        String result = instance.readUser().getEmail();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -169,13 +149,16 @@ public class UserTest {
     @Test
     public void testBooleanReadUser() {
         System.out.println("BooleanReadUser");
-        String input = "";
-        User instance = new User();
-        boolean expResult = false;
-        boolean result = instance.BooleanReadUser(input);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        System.out.println("Case 1 : User tidak ada");
+        String input1 = "xyz@gmail.com";
+        boolean expResult1 = false;
+        boolean result1 = instance.BooleanReadUser(input1);
+        assertEquals(expResult1, result1);
+        System.out.println("Case 2 : User ada");
+        String input2 = "xyz@gmail.com";
+        boolean expResult2 = true;
+        boolean result2 = instance.BooleanReadUser(input2);
+        assertEquals(expResult2, result2);
     }
 
     /**
@@ -184,14 +167,11 @@ public class UserTest {
     @Test
     public void testBooleanReadPass() {
         System.out.println("BooleanReadPass");
-        String email = "";
-        String input = "";
-        User instance = new User();
-        boolean expResult = false;
+        String email = "admin@ms.com";
+        String input = "admin";
+        boolean expResult = true;
         boolean result = instance.BooleanReadPass(email, input);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -200,13 +180,10 @@ public class UserTest {
     @Test
     public void testReadUserOne() {
         System.out.println("readUserOne");
-        String email = "";
-        User instance = new User();
-        User expResult = null;
+        String email = "user2@ms.com";
+        User expResult = new User("user2@ms.com");
         User result = instance.readUserOne(email);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -215,13 +192,10 @@ public class UserTest {
     @Test
     public void testEncr() {
         System.out.println("encr");
-        String text = "";
-        User instance = new User();
-        String expResult = "";
+        String text = "admin";
+        String expResult = "21232f297a57a5a743894a0e4a801fc3";
         String result = instance.encr(text);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -230,13 +204,23 @@ public class UserTest {
     @Test
     public void testCheckLoginDb() {
         System.out.println("checkLoginDb");
-        User usr = null;
-        User instance = new User();
-        String expResult = "";
-        String result = instance.checkLoginDb(usr);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        System.out.println("Case 1 : User tidak ada");
+        User usr1 = new User("nothing@nothing.not");
+        String expResult1 = "0";
+        String result1 = instance.checkLoginDb(usr1);
+        assertEquals(expResult1, result1);
+        
+        System.out.println("Case 2 : User ada tapi bukan admin");
+        User usr2 = new User("user2@ms.com");
+        String expResult2 = "1";
+        String result2 = instance.checkLoginDb(usr2);
+        assertEquals(expResult2, result2);
+        
+        System.out.println("Case 3 : User ada dan adalah admin");
+        User usr3 = new User("admin@ms.com");
+        String expResult3 = "2";
+        String result3 = instance.checkLoginDb(usr3);
+        assertEquals(expResult3, result3);
     }
 
     /**
@@ -245,12 +229,9 @@ public class UserTest {
     @Test
     public void testLastAdmin() {
         System.out.println("lastAdmin");
-        User instance = new User();
-        boolean expResult = false;
+        boolean expResult = true;
         boolean result = instance.lastAdmin();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -259,13 +240,10 @@ public class UserTest {
     @Test
     public void testEditAll() {
         System.out.println("editAll");
-        User usr = null;
-        User instance = new User();
+        User usr = new User("newEmail@new.com");
         boolean expResult = false;
         boolean result = instance.editAll(usr);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -274,28 +252,23 @@ public class UserTest {
     @Test
     public void testEditOne() {
         System.out.println("editOne");
-        String condition = "";
-        User usr = null;
-        User instance = new User();
-        boolean expResult = false;
+        String condition = "user";
+        User usr = new User("user1@ms.com");
+        boolean expResult = true;
         boolean result = instance.editOne(condition, usr);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
      * Test of readAll method, of class User.
+     * BELUM
      */
     @Test
     public void testReadAll() {
         System.out.println("readAll");
-        User instance = new User();
         String expResult = "";
         String result = instance.readAll();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -304,12 +277,9 @@ public class UserTest {
     @Test
     public void testDel() {
         System.out.println("del");
-        User instance = new User();
         boolean expResult = false;
         boolean result = instance.del();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -318,13 +288,12 @@ public class UserTest {
     @Test
     public void testCheckdel() {
         System.out.println("checkdel");
-        String Email = "";
-        User instance = new User();
-        boolean expResult = false;
+        String Email = "user19@ms.com";
+        User dihapus = new User("user19@ms.com");
+        dihapus.del();
+        boolean expResult = true;
         boolean result = instance.checkdel(Email);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
