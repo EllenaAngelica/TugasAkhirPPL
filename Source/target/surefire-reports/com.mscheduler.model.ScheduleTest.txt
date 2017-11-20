@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.mscheduler.model.ScheduleTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec <<< FAILURE!
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec <<< FAILURE!
 testGetTotalParticipant(com.mscheduler.model.ScheduleTest)  Time elapsed: 0 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: expected:<6> but was:<0>
 	at junit.framework.Assert.fail(Assert.java:57)
@@ -70,7 +70,7 @@ junit.framework.AssertionFailedError: expected:<7> but was:<1>
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testAddImportantParticipant(com.mscheduler.model.ScheduleTest)  Time elapsed: 0 sec  <<< FAILURE!
+testAddImportantParticipant(com.mscheduler.model.ScheduleTest)  Time elapsed: 0.016 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: expected:<7> but was:<1>
 	at junit.framework.Assert.fail(Assert.java:57)
 	at junit.framework.Assert.failNotEquals(Assert.java:329)

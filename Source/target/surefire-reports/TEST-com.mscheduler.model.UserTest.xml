@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="21" failures="6" name="com.mscheduler.model.UserTest" time="0.625" errors="0" skipped="0">
+<testsuite tests="21" failures="6" name="com.mscheduler.model.UserTest" time="0.344" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_152\jre\bin"/>
@@ -14,7 +14,6 @@
     <property name="user.country" value="ID"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="test" value="com.mscheduler.model.UserTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\Users\Lenovo Iyoss\Documents\GitHub\TugasAkhirPPL\Source"/>
     <property name="java.runtime.version" value="1.8.0_152-b16"/>
@@ -45,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_152\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=com.mscheduler.model.UserTest -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -62,7 +61,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.mscheduler.model.UserTest" name="testCheckdel" time="0.391"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testCheckdel" time="0.219"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testSetPassword" time="0"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testGetPassword" time="0"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testLastAdmin" time="0">
@@ -108,8 +107,8 @@
 </system-out>
   </testcase>
   <testcase classname="com.mscheduler.model.UserTest" name="testGetEmail" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testReadUserOne" time="0.015">
-    <failure message="expected:&lt;com.mscheduler.model.User@cb51256&gt; but was:&lt;com.mscheduler.model.User@59906517&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;com.mscheduler.model.User@cb51256&gt; but was:&lt;com.mscheduler.model.User@59906517&gt;
+  <testcase classname="com.mscheduler.model.UserTest" name="testReadUserOne" time="0">
+    <failure message="expected:&lt;com.mscheduler.model.User@6a1aab78&gt; but was:&lt;com.mscheduler.model.User@462d5aee&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;com.mscheduler.model.User@6a1aab78&gt; but was:&lt;com.mscheduler.model.User@462d5aee&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
@@ -150,7 +149,7 @@
     <system-out>readUserOne
 </system-out>
   </testcase>
-  <testcase classname="com.mscheduler.model.UserTest" name="testDel" time="0.032">
+  <testcase classname="com.mscheduler.model.UserTest" name="testDel" time="0.031">
     <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -192,9 +191,9 @@
     <system-out>del
 </system-out>
   </testcase>
-  <testcase classname="com.mscheduler.model.UserTest" name="testEncr" time="0"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testEncr" time="0.016"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testBooleanReadPass" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testBooleanReadUser" time="0.015">
+  <testcase classname="com.mscheduler.model.UserTest" name="testBooleanReadUser" time="0">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -239,7 +238,7 @@ Case 2 : User ada
 </system-out>
   </testcase>
   <testcase classname="com.mscheduler.model.UserTest" name="testGetName" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testReadUser" time="0"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testReadUser" time="0.015"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testSetIsAdmin" time="0"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testReadAll" time="0.016">
     <failure message="expected:&lt;[]&gt; but was:&lt;[admin@ms.com
@@ -367,8 +366,8 @@ Case 2 : User ada tapi bukan admin
   </testcase>
   <testcase classname="com.mscheduler.model.UserTest" name="testSetName" time="0"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testSaving" time="0.015"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testEditAll" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testEditOne" time="0.016"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testEditAll" time="0.016"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testEditOne" time="0"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testSetEmail" time="0"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testIsIsAdmin" time="0"/>
 </testsuite>

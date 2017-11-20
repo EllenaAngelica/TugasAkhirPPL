@@ -1,11 +1,14 @@
 -------------------------------------------------------------------------------
-Test set: com.mscheduler.model.InvitationTest
+Test set: com.mscheduler.model.MeetingStatusTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.016 sec <<< FAILURE!
-testAddAvailability(com.mscheduler.model.InvitationTest)  Time elapsed: 0.016 sec  <<< ERROR!
-java.lang.NullPointerException
-	at com.mscheduler.model.Invitation.addAvailability(Invitation.java:49)
-	at com.mscheduler.model.InvitationTest.testAddAvailability(InvitationTest.java:115)
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec <<< FAILURE!
+testValues(com.mscheduler.model.MeetingStatusTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+arrays first differed at element [0]; expected:<canceled> but was:<negotiating>
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:55)
+	at org.junit.Assert.internalArrayEquals(Assert.java:532)
+	at org.junit.Assert.assertArrayEquals(Assert.java:283)
+	at org.junit.Assert.assertArrayEquals(Assert.java:298)
+	at com.mscheduler.model.MeetingStatusTest.testValues(MeetingStatusTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -37,3 +40,11 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.lang.AssertionError: expected:<canceled> but was:<negotiating>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:53)
+	... 35 more

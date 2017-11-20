@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.mscheduler.model.UserTest
 -------------------------------------------------------------------------------
-Tests run: 21, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.609 sec <<< FAILURE!
+Tests run: 21, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.328 sec <<< FAILURE!
 testLastAdmin(com.mscheduler.model.UserTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<true> but was:<false>
 	at org.junit.Assert.fail(Assert.java:88)
@@ -40,8 +40,8 @@ java.lang.AssertionError: expected:<true> but was:<false>
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testReadUserOne(com.mscheduler.model.UserTest)  Time elapsed: 0.015 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<com.mscheduler.model.User@cb51256> but was:<com.mscheduler.model.User@59906517>
+testReadUserOne(com.mscheduler.model.UserTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<com.mscheduler.model.User@6a1aab78> but was:<com.mscheduler.model.User@462d5aee>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
@@ -78,7 +78,7 @@ java.lang.AssertionError: expected:<com.mscheduler.model.User@cb51256> but was:<
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testDel(com.mscheduler.model.UserTest)  Time elapsed: 0.032 sec  <<< FAILURE!
+testDel(com.mscheduler.model.UserTest)  Time elapsed: 0.031 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<false> but was:<true>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -116,7 +116,7 @@ java.lang.AssertionError: expected:<false> but was:<true>
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testBooleanReadUser(com.mscheduler.model.UserTest)  Time elapsed: 0.015 sec  <<< FAILURE!
+testBooleanReadUser(com.mscheduler.model.UserTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<true> but was:<false>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)

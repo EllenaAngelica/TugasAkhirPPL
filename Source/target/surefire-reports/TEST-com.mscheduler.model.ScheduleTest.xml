@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="3" name="com.mscheduler.model.ScheduleTest" time="0.016" errors="0" skipped="0">
+<testsuite tests="6" failures="3" name="com.mscheduler.model.ScheduleTest" time="0.032" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_152\jre\bin"/>
@@ -140,7 +140,7 @@
   </testcase>
   <testcase classname="com.mscheduler.model.ScheduleTest" name="testSetDate" time="0"/>
   <testcase classname="com.mscheduler.model.ScheduleTest" name="testIsValid" time="0"/>
-  <testcase classname="com.mscheduler.model.ScheduleTest" name="testAddImportantParticipant" time="0">
+  <testcase classname="com.mscheduler.model.ScheduleTest" name="testAddImportantParticipant" time="0.016">
     <failure message="expected:&lt;7&gt; but was:&lt;1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;7&gt; but was:&lt;1&gt;
 	at junit.framework.Assert.fail(Assert.java:57)
 	at junit.framework.Assert.failNotEquals(Assert.java:329)
