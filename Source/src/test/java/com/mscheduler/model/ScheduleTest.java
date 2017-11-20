@@ -7,8 +7,10 @@ import junit.framework.TestCase;
 
 /**
  *
- * @author Ellena Angelica (2015730029) Billy Adiwijaya (2015730053) Yosua
- * (2015730067)
+ * @author
+ * Ellena Angelica (2015730029)
+ * Billy Adiwijaya (2015730053)
+ * Yosua (2015730067)
  */
 public class ScheduleTest extends TestCase {
     int id;
