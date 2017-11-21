@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.mscheduler.model.MeetingTest
 -------------------------------------------------------------------------------
-Tests run: 28, Failures: 25, Errors: 3, Skipped: 0, Time elapsed: 1.604 sec <<< FAILURE!
-testGetProposed_date_range(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+Tests run: 28, Failures: 25, Errors: 3, Skipped: 0, Time elapsed: 1.536 sec <<< FAILURE!
+testGetProposed_date_range(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testGetProposed_date_range(MeetingTest.java:309)
@@ -37,7 +37,7 @@ java.lang.AssertionError: The test case is a prototype.
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetTitle(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+testGetTitle(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<> but was:<null>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -75,7 +75,7 @@ java.lang.AssertionError: expected:<> but was:<null>
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testIsImportantParticipant(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testIsImportantParticipant(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.mscheduler.model.Meeting.isImportantParticipant(Meeting.java:101)
 	at com.mscheduler.model.MeetingTest.testIsImportantParticipant(MeetingTest.java:115)
@@ -110,7 +110,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetId(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+testGetId(com.mscheduler.model.MeetingTest)  Time elapsed: 0.209 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testGetId(MeetingTest.java:147)
@@ -145,7 +145,7 @@ java.lang.AssertionError: The test case is a prototype.
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSetId(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+testSetId(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testSetId(MeetingTest.java:160)
@@ -215,7 +215,7 @@ java.lang.AssertionError: The test case is a prototype.
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testToString(com.mscheduler.model.MeetingTest)  Time elapsed: 1.382 sec  <<< FAILURE!
+testToString(com.mscheduler.model.MeetingTest)  Time elapsed: 1.002 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<...4 00:00:00 ICT 3917
 []> but was:<...4 00:00:00 ICT 3917
 [Important Participant List : 
@@ -256,7 +256,7 @@ Participant List :
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetLocation(com.mscheduler.model.MeetingTest)  Time elapsed: 0.101 sec  <<< FAILURE!
+testGetLocation(com.mscheduler.model.MeetingTest)  Time elapsed: 0.164 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<> but was:<null>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -294,7 +294,7 @@ java.lang.AssertionError: expected:<> but was:<null>
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSetProposed_date_range(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+testSetProposed_date_range(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testSetProposed_date_range(MeetingTest.java:322)
@@ -364,7 +364,7 @@ java.lang.AssertionError: The test case is a prototype.
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetAgreed_time(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+testGetAgreed_time(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testGetAgreed_time(MeetingTest.java:444)
@@ -434,7 +434,7 @@ java.lang.AssertionError: The test case is a prototype.
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetDuration(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+testGetDuration(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testGetDuration(MeetingTest.java:282)
@@ -469,7 +469,7 @@ java.lang.AssertionError: The test case is a prototype.
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetParticipants(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+testGetParticipants(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testGetParticipants(MeetingTest.java:363)
@@ -504,7 +504,7 @@ java.lang.AssertionError: The test case is a prototype.
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetNegotiation_deadline(com.mscheduler.model.MeetingTest)  Time elapsed: 0.009 sec  <<< FAILURE!
+testGetNegotiation_deadline(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testGetNegotiation_deadline(MeetingTest.java:336)
@@ -539,7 +539,7 @@ java.lang.AssertionError: The test case is a prototype.
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testIsNormalParticipant(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< ERROR!
+testIsNormalParticipant(com.mscheduler.model.MeetingTest)  Time elapsed: 0.01 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.mscheduler.model.Meeting.isNormalParticipant(Meeting.java:111)
 	at com.mscheduler.model.MeetingTest.testIsNormalParticipant(MeetingTest.java:130)
@@ -574,7 +574,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSetImportant_participants(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+testSetImportant_participants(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testSetImportant_participants(MeetingTest.java:403)
@@ -644,7 +644,7 @@ java.lang.AssertionError: The test case is a prototype.
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSetAgenda(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+testSetAgenda(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testSetAgenda(MeetingTest.java:241)
@@ -714,7 +714,7 @@ java.lang.AssertionError: The test case is a prototype.
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetAgenda(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+testGetAgenda(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<> but was:<null>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -752,7 +752,7 @@ java.lang.AssertionError: expected:<> but was:<null>
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSetStatus(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+testSetStatus(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testSetStatus(MeetingTest.java:430)
@@ -787,7 +787,7 @@ java.lang.AssertionError: The test case is a prototype.
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testGetStatus(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+testGetStatus(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testGetStatus(MeetingTest.java:417)
@@ -857,7 +857,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSetPastDeadline(com.mscheduler.model.MeetingTest)  Time elapsed: 0.013 sec  <<< FAILURE!
+testSetPastDeadline(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testSetPastDeadline(MeetingTest.java:228)
@@ -892,7 +892,7 @@ java.lang.AssertionError: The test case is a prototype.
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSetAgreed_time(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
+testSetAgreed_time(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testSetAgreed_time(MeetingTest.java:457)
@@ -927,7 +927,7 @@ java.lang.AssertionError: The test case is a prototype.
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSetNegotiation_deadline(com.mscheduler.model.MeetingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+testSetNegotiation_deadline(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testSetNegotiation_deadline(MeetingTest.java:349)
@@ -962,7 +962,7 @@ java.lang.AssertionError: The test case is a prototype.
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-testSetTitle(com.mscheduler.model.MeetingTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+testSetTitle(com.mscheduler.model.MeetingTest)  Time elapsed: 0 sec  <<< FAILURE!
 java.lang.AssertionError: The test case is a prototype.
 	at org.junit.Assert.fail(Assert.java:88)
 	at com.mscheduler.model.MeetingTest.testSetTitle(MeetingTest.java:187)

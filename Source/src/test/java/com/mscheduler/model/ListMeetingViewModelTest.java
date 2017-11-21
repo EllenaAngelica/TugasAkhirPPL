@@ -77,7 +77,7 @@ public class ListMeetingViewModelTest {
     public void testSetMeeting_title() {
         System.out.println("setMeeting_title");
         String new_meeting_title = "New Meeting";
-        instance.setMeeting_title(meeting_title);
+        instance.setMeeting_title(new_meeting_title);
         assertEquals(new_meeting_title, instance.getMeeting_title());
     }
 

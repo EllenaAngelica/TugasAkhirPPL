@@ -1,0 +1,27 @@
+#surefire
+#Tue Nov 21 22:44:51 ICT 2017
+testClassesDirectory=D\:\\Github\\TugasAkhirPPL\\Source\\target\\test-classes
+classPathUrl.4=C\:\\Users\\Angelica\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-core\\2.8.4\\jackson-core-2.8.4.jar
+forkMode=once
+classPathUrl.3=C\:\\Users\\Angelica\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.8.0\\jackson-annotations-2.8.0.jar
+classPathUrl.2=C\:\\Users\\Angelica\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.8.4\\jackson-databind-2.8.4.jar
+useManifestOnlyJar=true
+classPathUrl.1=D\:\\Github\\TugasAkhirPPL\\Source\\target\\classes
+reportsDirectory=D\:\\Github\\TugasAkhirPPL\\Source\\target\\surefire-reports
+classPathUrl.0=D\:\\Github\\TugasAkhirPPL\\Source\\target\\test-classes
+providerConfiguration=org.apache.maven.surefire.junit4.JUnit4Provider
+testSuiteDefinitionTestSourceDirectory=D\:\\Github\\TugasAkhirPPL\\Source\\src\\test\\java
+surefireClassPathUrl.1=C\:\\Users\\Angelica\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-api\\2.10\\surefire-api-2.10.jar
+surefireClassPathUrl.0=C\:\\Users\\Angelica\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-junit4\\2.10\\surefire-junit4-2.10.jar
+runOrder=filesystem
+useSystemClassLoader=true
+excludes0=**/*$*
+isTrimStackTrace=true
+enableAssertions=true
+includes2=**/*TestCase.java
+failIfNoTests=false
+includes1=**/*Test.java
+includes0=**/Test*.java
+childDelegation=false
+classPathUrl.6=C\:\\Users\\Angelica\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar
+classPathUrl.5=C\:\\Users\\Angelica\\.m2\\repository\\junit\\junit\\4.12\\junit-4.12.jar
