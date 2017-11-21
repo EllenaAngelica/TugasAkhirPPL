@@ -66,7 +66,7 @@
   <testcase classname="com.mscheduler.model.InvitationTest" name="testSetTo" time="0"/>
   <testcase classname="com.mscheduler.model.InvitationTest" name="testSetMeeting_id" time="0"/>
   <testcase classname="com.mscheduler.model.InvitationTest" name="testGetAvailability" time="0"/>
-  <testcase classname="com.mscheduler.model.InvitationTest" name="testAddAvailability" time="0.016">
+  <testcase classname="com.mscheduler.model.InvitationTest" name="testAddAvailability" time="0.015">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at com.mscheduler.model.Invitation.addAvailability(Invitation.java:49)
 	at com.mscheduler.model.InvitationTest.testAddAvailability(InvitationTest.java:115)
