@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="com.mscheduler.model.InvitationTest" time="0.159" errors="1" skipped="0">
+<testsuite tests="6" failures="1" name="com.mscheduler.model.ListInvitationViewModelTest" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_102\jre\bin"/>
@@ -63,19 +63,14 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.mscheduler.model.InvitationTest" name="testGetMeeting_id" time="0"/>
-  <testcase classname="com.mscheduler.model.InvitationTest" name="testGetTo" time="0"/>
-  <testcase classname="com.mscheduler.model.InvitationTest" name="testSetTo" time="0"/>
-  <testcase classname="com.mscheduler.model.InvitationTest" name="testSetMeeting_id" time="0"/>
-  <testcase classname="com.mscheduler.model.InvitationTest" name="testGetAvailability" time="0"/>
-<<<<<<< HEAD
-  <testcase classname="com.mscheduler.model.InvitationTest" name="testAddAvailability" time="0.015">
-=======
-  <testcase classname="com.mscheduler.model.InvitationTest" name="testAddAvailability" time="0">
->>>>>>> 4fd4869806e02e7ff9ad226df27629265cbdcad8
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.mscheduler.model.Invitation.addAvailability(Invitation.java:49)
-	at com.mscheduler.model.InvitationTest.testAddAvailability(InvitationTest.java:115)
+  <testcase classname="com.mscheduler.model.ListInvitationViewModelTest" name="testGetMeeting_id" time="0"/>
+  <testcase classname="com.mscheduler.model.ListInvitationViewModelTest" name="testSetMeeting_id" time="0"/>
+  <testcase classname="com.mscheduler.model.ListInvitationViewModelTest" name="testSetInvitation_status" time="0"/>
+  <testcase classname="com.mscheduler.model.ListInvitationViewModelTest" name="testGetMeeting_title" time="0">
+    <failure message="expected:&lt;[M]eeting 2&gt; but was:&lt;[m]eeting 2&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[M]eeting 2&gt; but was:&lt;[m]eeting 2&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.mscheduler.model.ListInvitationViewModelTest.testGetMeeting_title(ListInvitationViewModelTest.java:71)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,11 +102,10 @@
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-</error>
-    <system-out>addAvailability
+</failure>
+    <system-out>getMeeting_title
 </system-out>
   </testcase>
-  <testcase classname="com.mscheduler.model.InvitationTest" name="testSetAvailability" time="0.001"/>
-  <testcase classname="com.mscheduler.model.InvitationTest" name="testSetStatus" time="0.001"/>
-  <testcase classname="com.mscheduler.model.InvitationTest" name="testGetStatus" time="0"/>
+  <testcase classname="com.mscheduler.model.ListInvitationViewModelTest" name="testGetInvitation_status" time="0"/>
+  <testcase classname="com.mscheduler.model.ListInvitationViewModelTest" name="testSetMeeting_title" time="0"/>
 </testsuite>

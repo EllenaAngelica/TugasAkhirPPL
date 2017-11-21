@@ -261,12 +261,15 @@ public class UserTest {
 
     /**
      * Test of readAll method, of class User.
-     * BELUM
      */
     @Test
     public void testReadAll() {
         System.out.println("readAll");
-        String expResult = "";
+        String expResult = "admin@ms.com\nuser2@ms.com\nuser3@ms.com\nuser4@ms.com\nuser5@ms.com\n"
+                + "user6@ms.com\nuser7@ms.com\nuser8@ms.com\nuser9@ms.com\nuser10@ms.com\n"
+                + "user11@ms.com\nuser12@ms.com\nuser13@ms.com\nuser14@ms.com\nuser15@ms.com\n"
+                + "user16@ms.com\nuser17@ms.com\nuser18@ms.com\nuser19@ms.com\nuser20@ms.com\n"
+                + "email@gmail.com\nuser1@ms.com";
         String result = instance.readAll();
         assertEquals(expResult, result);
     }

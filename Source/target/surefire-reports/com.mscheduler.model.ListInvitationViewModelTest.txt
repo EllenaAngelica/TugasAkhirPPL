@@ -1,16 +1,12 @@
 -------------------------------------------------------------------------------
-Test set: com.mscheduler.model.InvitationTest
+Test set: com.mscheduler.model.ListInvitationViewModelTest
 -------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.015 sec <<< FAILURE!
-testAddAvailability(com.mscheduler.model.InvitationTest)  Time elapsed: 0.015 sec  <<< ERROR!
-=======
-Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.004 sec <<< FAILURE!
-testAddAvailability(com.mscheduler.model.InvitationTest)  Time elapsed: 0 sec  <<< ERROR!
->>>>>>> 4fd4869806e02e7ff9ad226df27629265cbdcad8
-java.lang.NullPointerException
-	at com.mscheduler.model.Invitation.addAvailability(Invitation.java:49)
-	at com.mscheduler.model.InvitationTest.testAddAvailability(InvitationTest.java:115)
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
+testGetMeeting_title(com.mscheduler.model.ListInvitationViewModelTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[M]eeting 2> but was:<[m]eeting 2>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.mscheduler.model.ListInvitationViewModelTest.testGetMeeting_title(ListInvitationViewModelTest.java:71)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
