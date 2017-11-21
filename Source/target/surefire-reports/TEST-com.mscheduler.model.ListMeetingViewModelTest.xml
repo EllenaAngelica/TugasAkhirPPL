@@ -64,9 +64,9 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="com.mscheduler.model.ListMeetingViewModelTest" name="testGetMeeting_id" time="0"/>
-  <testcase classname="com.mscheduler.model.ListMeetingViewModelTest" name="testSetMeeting_id" time="0"/>
+  <testcase classname="com.mscheduler.model.ListMeetingViewModelTest" name="testSetMeeting_id" time="0.001"/>
   <testcase classname="com.mscheduler.model.ListMeetingViewModelTest" name="testGetMeeting_title" time="0"/>
   <testcase classname="com.mscheduler.model.ListMeetingViewModelTest" name="testGetMeeting_status" time="0"/>
-  <testcase classname="com.mscheduler.model.ListMeetingViewModelTest" name="testSetMeetingStatus" time="0.001"/>
+  <testcase classname="com.mscheduler.model.ListMeetingViewModelTest" name="testSetMeetingStatus" time="0"/>
   <testcase classname="com.mscheduler.model.ListMeetingViewModelTest" name="testSetMeeting_title" time="0"/>
 </testsuite>

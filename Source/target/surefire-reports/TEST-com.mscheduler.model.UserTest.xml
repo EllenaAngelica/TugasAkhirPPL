@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="21" failures="5" name="com.mscheduler.model.UserTest" time="0.13" errors="0" skipped="0">
+<testsuite tests="21" failures="5" name="com.mscheduler.model.UserTest" time="5.207" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_102\jre\bin"/>
@@ -63,13 +63,13 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.mscheduler.model.UserTest" name="testCheckdel" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testSetPassword" time="0.001"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testGetPassword" time="0.001"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testLastAdmin" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testGetEmail" time="0"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testCheckdel" time="0.108"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testSetPassword" time="0"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testGetPassword" time="0"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testLastAdmin" time="0.048"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testGetEmail" time="0.001"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testReadUserOne" time="0">
-    <failure message="expected:&lt;com.mscheduler.model.User@5e57643e&gt; but was:&lt;com.mscheduler.model.User@133e16fd&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;com.mscheduler.model.User@5e57643e&gt; but was:&lt;com.mscheduler.model.User@133e16fd&gt;
+    <failure message="expected:&lt;com.mscheduler.model.User@4f51b3e0&gt; but was:&lt;com.mscheduler.model.User@4b9e255&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;com.mscheduler.model.User@4f51b3e0&gt; but was:&lt;com.mscheduler.model.User@4b9e255&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
@@ -110,7 +110,7 @@
     <system-out>readUserOne
 </system-out>
   </testcase>
-  <testcase classname="com.mscheduler.model.UserTest" name="testDel" time="0">
+  <testcase classname="com.mscheduler.model.UserTest" name="testDel" time="1.271">
     <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -152,9 +152,9 @@
     <system-out>del
 </system-out>
   </testcase>
-  <testcase classname="com.mscheduler.model.UserTest" name="testEncr" time="0.001"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testEncr" time="0"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testBooleanReadPass" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testBooleanReadUser" time="0">
+  <testcase classname="com.mscheduler.model.UserTest" name="testBooleanReadUser" time="0.001">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -199,7 +199,7 @@ Case 2 : User ada
 </system-out>
   </testcase>
   <testcase classname="com.mscheduler.model.UserTest" name="testGetName" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testReadUser" time="0.119"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testReadUser" time="0.195"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testSetIsAdmin" time="0"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testReadAll" time="0">
     <failure message="expected:&lt;...s.com
@@ -253,7 +253,7 @@ user1@ms.com
     <system-out>readAll
 </system-out>
   </testcase>
-  <testcase classname="com.mscheduler.model.UserTest" name="testCheckLoginDb" time="0">
+  <testcase classname="com.mscheduler.model.UserTest" name="testCheckLoginDb" time="0.001">
     <failure message="expected:&lt;[1]&gt; but was:&lt;[0]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[1]&gt; but was:&lt;[0]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
@@ -296,9 +296,9 @@ Case 2 : User ada tapi bukan admin
 </system-out>
   </testcase>
   <testcase classname="com.mscheduler.model.UserTest" name="testSetName" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testSaving" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testEditAll" time="0"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testSaving" time="0.084"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testEditAll" time="0.001"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testEditOne" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testSetEmail" time="0.001"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testSetEmail" time="0"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testIsIsAdmin" time="0"/>
 </testsuite>

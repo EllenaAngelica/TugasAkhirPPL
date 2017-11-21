@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.mscheduler.model.MeetingTest
 -------------------------------------------------------------------------------
-Tests run: 28, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.965 sec <<< FAILURE!
-testToString(com.mscheduler.model.MeetingTest)  Time elapsed: 0.943 sec  <<< FAILURE!
+Tests run: 28, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.161 sec <<< FAILURE!
+testToString(com.mscheduler.model.MeetingTest)  Time elapsed: 1.563 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<...Participant List : 
 [vip1
 vip2

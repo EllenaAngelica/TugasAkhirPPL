@@ -19,14 +19,10 @@ import static org.junit.Assert.*;
 
 /**
  *
-
- * @author Lenovo Iyoss
-=======
  * @author
  * Ellena Angelica (2015730029)
  * Billy Adiwijaya (2015730053)
  * Yosua (2015730067)
-
  */
 public class DateRangeTest {
     
@@ -99,7 +95,7 @@ public class DateRangeTest {
         Date date_start = new Date(2017, 6, 5);
         Date date_end = new Date(2017, 6, 6);
         DateRange instance = new DateRange(date_start, date_end);
-        instance.setDate_start(date_start);
+        instance.setDate_start(new_date_start);
         assertEquals(new_date_start, instance.getDate_start());
 
     }
@@ -130,7 +126,7 @@ public class DateRangeTest {
         Date date_start = new Date(2017, 6, 5);
         Date date_end = new Date(2017, 6, 6);
         DateRange instance = new DateRange(date_start, date_end);
-        instance.setDate_end(date_end);
+        instance.setDate_end(new_date_end);
         assertEquals(new_date_end, instance.getDate_end());
 
     }

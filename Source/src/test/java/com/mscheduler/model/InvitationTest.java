@@ -13,8 +13,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
- * @author Lenovo Iyoss
+ * 
+ * @author
+ * Ellena Angelica (2015730029)
+ * Billy Adiwijaya (2015730053)
+ * Yosua (2015730067)
  */
 public class InvitationTest {
     Invitation instance;
