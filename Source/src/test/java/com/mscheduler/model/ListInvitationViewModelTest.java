@@ -66,7 +66,7 @@ public class ListInvitationViewModelTest {
     @Test
     public void testGetMeeting_title() {
         System.out.println("getMeeting_title");
-        String expResult = "Meeting 2";
+        String expResult = "meeting 2";
         String result = instance.getMeeting_title();
         assertEquals(expResult, result);
     }
