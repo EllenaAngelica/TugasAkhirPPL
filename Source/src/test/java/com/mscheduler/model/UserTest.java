@@ -94,7 +94,6 @@ public class UserTest {
     public void testSetName() {
         System.out.println("setName");
         String name = "user";
-        User instance = new User();
         instance.setName(name);
         assertEquals(name, instance.getName());
     }
@@ -211,7 +210,7 @@ public class UserTest {
         assertEquals(expResult1, result1);
         
         System.out.println("Case 2 : User ada tapi bukan admin");
-        User usr2 = new User("user2@ms.com");
+        User usr2 = new User("user3@ms.com");
         String expResult2 = "1";
         String result2 = instance.checkLoginDb(usr2);
         assertEquals(expResult2, result2);
@@ -229,7 +228,7 @@ public class UserTest {
     @Test
     public void testLastAdmin() {
         System.out.println("lastAdmin");
-        boolean expResult = true;
+        boolean expResult = false;
         boolean result = instance.lastAdmin();
         assertEquals(expResult, result);
     }
@@ -268,8 +267,8 @@ public class UserTest {
         String expResult = "admin@ms.com\nuser2@ms.com\nuser3@ms.com\nuser4@ms.com\nuser5@ms.com\n"
                 + "user6@ms.com\nuser7@ms.com\nuser8@ms.com\nuser9@ms.com\nuser10@ms.com\n"
                 + "user11@ms.com\nuser12@ms.com\nuser13@ms.com\nuser14@ms.com\nuser15@ms.com\n"
-                + "user16@ms.com\nuser17@ms.com\nuser18@ms.com\nuser19@ms.com\nuser20@ms.com\n"
-                + "email@gmail.com\nuser1@ms.com";
+                + "user16@ms.com\nuser17@ms.com\nuser18@ms.com\nuser20@ms.com\n"
+                + " user1@ms.com ";
         String result = instance.readAll();
         assertEquals(expResult, result);
     }

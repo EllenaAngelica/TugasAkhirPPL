@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.mscheduler.model.InvitationTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE!
+Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.079 sec <<< FAILURE!
 testAddAvailability(com.mscheduler.model.InvitationTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.mscheduler.model.Invitation.addAvailability(Invitation.java:49)

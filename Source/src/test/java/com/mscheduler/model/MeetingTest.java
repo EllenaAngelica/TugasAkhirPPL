@@ -84,7 +84,11 @@ public class MeetingTest {
                 + "Proposed Date Range : " + df.format(this.proposed_date_start) + " - " + df.format(this.proposed_date_end)+"\n"
                 + "Negotiation Deadline : " + df.format(this.negotiation_deadline)+"\n"
                 + "Status : " + this.status+"\n"
-                + "Agreed Time : " + this.agreed_time_date_start + " - " + this.agreed_time_date_end +"\n";
+                + "Agreed Time : " + this.agreed_time_date_start + " - " + this.agreed_time_date_end +"\n"
+                + "Important Participant List : \n"
+                + "vip1\nvip2\nvip3\n"
+                + "Participant List : \n"
+                + "people1\npeople2\npeople3\n";
         String result = instance.toString();
         assertEquals(expResult, result);
     }
@@ -95,12 +99,9 @@ public class MeetingTest {
     @Test
     public void testIsPastDeadline() {
         System.out.println("isPastDeadline");
-        Meeting instance = new Meeting();
         boolean expResult = false;
         boolean result = instance.isPastDeadline();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -109,13 +110,10 @@ public class MeetingTest {
     @Test
     public void testIsImportantParticipant() {
         System.out.println("isImportantParticipant");
-        String email = "";
-        Meeting instance = new Meeting();
-        boolean expResult = false;
+        String email = "vip1";
+        boolean expResult = true;
         boolean result = instance.isImportantParticipant(email);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -124,13 +122,10 @@ public class MeetingTest {
     @Test
     public void testIsNormalParticipant() {
         System.out.println("isNormalParticipant");
-        String email = "";
-        Meeting instance = new Meeting();
-        boolean expResult = false;
+        String email = "people1";
+        boolean expResult = true;
         boolean result = instance.isNormalParticipant(email);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -139,12 +134,9 @@ public class MeetingTest {
     @Test
     public void testGetId() {
         System.out.println("getId");
-        Meeting instance = new Meeting();
-        int expResult = 0;
+        int expResult = 1;
         int result = instance.getId();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -153,11 +145,9 @@ public class MeetingTest {
     @Test
     public void testSetId() {
         System.out.println("setId");
-        int id = 0;
-        Meeting instance = new Meeting();
-        instance.setId(id);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int new_id = 0;
+        instance.setId(new_id);
+        assertEquals(new_id, instance.getId());
     }
 
     /**
@@ -166,12 +156,9 @@ public class MeetingTest {
     @Test
     public void testGetTitle() {
         System.out.println("getTitle");
-        Meeting instance = new Meeting();
-        String expResult = "";
+        String expResult = "Negotiating";
         String result = instance.getTitle();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -180,11 +167,9 @@ public class MeetingTest {
     @Test
     public void testSetTitle() {
         System.out.println("setTitle");
-        String title = "";
+        String new_title = "Changed Plan";
         Meeting instance = new Meeting();
         instance.setTitle(title);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -193,12 +178,9 @@ public class MeetingTest {
     @Test
     public void testGetAgenda() {
         System.out.println("getAgenda");
-        Meeting instance = new Meeting();
-        String expResult = "";
+        String expResult = "Negotiating how much new workers will be paid.";
         String result = instance.getAgenda();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -207,12 +189,9 @@ public class MeetingTest {
     @Test
     public void testGetPastDeadline() {
         System.out.println("getPastDeadline");
-        Meeting instance = new Meeting();
-        Boolean expResult = null;
+        Boolean expResult = false;
         Boolean result = instance.getPastDeadline();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -221,11 +200,9 @@ public class MeetingTest {
     @Test
     public void testSetPastDeadline() {
         System.out.println("setPastDeadline");
-        Boolean pastDeadline = null;
-        Meeting instance = new Meeting();
-        instance.setPastDeadline(pastDeadline);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        Boolean new_pastDeadline = true;
+        instance.setPastDeadline(new_pastDeadline);
+        assertEquals(new_pastDeadline, instance.getPastDeadline());
     }
 
     /**
@@ -234,11 +211,9 @@ public class MeetingTest {
     @Test
     public void testSetAgenda() {
         System.out.println("setAgenda");
-        String agenda = "";
-        Meeting instance = new Meeting();
-        instance.setAgenda(agenda);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        String new_agenda = "plan B";
+        instance.setAgenda(new_agenda);
+        assertEquals(new_agenda, instance.getAgenda());
     }
 
     /**
@@ -247,12 +222,9 @@ public class MeetingTest {
     @Test
     public void testGetLocation() {
         System.out.println("getLocation");
-        Meeting instance = new Meeting();
-        String expResult = "";
+        String expResult = "Meeting room";
         String result = instance.getLocation();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -261,11 +233,9 @@ public class MeetingTest {
     @Test
     public void testSetLocation() {
         System.out.println("setLocation");
-        String location = "";
-        Meeting instance = new Meeting();
-        instance.setLocation(location);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        String new_location = "x";
+        instance.setLocation(new_location);
+        assertEquals(new_location, instance.getLocation());
     }
 
     /**
@@ -274,12 +244,9 @@ public class MeetingTest {
     @Test
     public void testGetDuration() {
         System.out.println("getDuration");
-        Meeting instance = new Meeting();
-        int expResult = 0;
+        int expResult = 4;
         int result = instance.getDuration();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -288,11 +255,9 @@ public class MeetingTest {
     @Test
     public void testSetDuration() {
         System.out.println("setDuration");
-        int duration = 0;
-        Meeting instance = new Meeting();
-        instance.setDuration(duration);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int new_duration = 3;
+        instance.setDuration(new_duration);
+        assertEquals(new_duration, instance.getDuration());
     }
 
     /**
@@ -301,12 +266,9 @@ public class MeetingTest {
     @Test
     public void testGetProposed_date_range() {
         System.out.println("getProposed_date_range");
-        Meeting instance = new Meeting();
-        DateRange expResult = null;
+        DateRange expResult = this.proposed_date_range;
         DateRange result = instance.getProposed_date_range();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -315,11 +277,11 @@ public class MeetingTest {
     @Test
     public void testSetProposed_date_range() {
         System.out.println("setProposed_date_range");
-        DateRange proposed_date_range = null;
-        Meeting instance = new Meeting();
-        instance.setProposed_date_range(proposed_date_range);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        DateRange new_proposed_date_range = null;
+        DateRange temp = this.proposed_date_range;
+        instance.setProposed_date_range(new_proposed_date_range);
+        assertEquals(new_proposed_date_range, instance.getProposed_date_range());
+        instance.setProposed_date_range(temp);
     }
 
     /**
@@ -328,12 +290,9 @@ public class MeetingTest {
     @Test
     public void testGetNegotiation_deadline() {
         System.out.println("getNegotiation_deadline");
-        Meeting instance = new Meeting();
-        Date expResult = null;
+        Date expResult = this.negotiation_deadline;
         Date result = instance.getNegotiation_deadline();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -342,11 +301,11 @@ public class MeetingTest {
     @Test
     public void testSetNegotiation_deadline() {
         System.out.println("setNegotiation_deadline");
-        Date negotiation_deadline = null;
-        Meeting instance = new Meeting();
-        instance.setNegotiation_deadline(negotiation_deadline);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        Date new_negotiation_deadline = null;
+        Date temp = this.negotiation_deadline;
+        instance.setNegotiation_deadline(new_negotiation_deadline);
+        assertEquals(new_negotiation_deadline, instance.getNegotiation_deadline());
+        instance.setNegotiation_deadline(temp);
     }
 
     /**
@@ -355,12 +314,9 @@ public class MeetingTest {
     @Test
     public void testGetParticipants() {
         System.out.println("getParticipants");
-        Meeting instance = new Meeting();
-        List<String> expResult = null;
+        List<String> expResult = this.participants;
         List<String> result = instance.getParticipants();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -369,11 +325,11 @@ public class MeetingTest {
     @Test
     public void testSetParticipants() {
         System.out.println("setParticipants");
-        List<String> participants = null;
-        Meeting instance = new Meeting();
-        instance.setParticipants(participants);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        List<String> new_participants = null;
+        List<String> temp = this.participants;
+        instance.setParticipants(new_participants);
+        assertEquals(new_participants, instance.getParticipants());
+        instance.setParticipants(temp);
     }
 
     /**
@@ -382,12 +338,9 @@ public class MeetingTest {
     @Test
     public void testGetImportant_participants() {
         System.out.println("getImportant_participants");
-        Meeting instance = new Meeting();
-        List<String> expResult = null;
+        List<String> expResult = this.important_participants;
         List<String> result = instance.getImportant_participants();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -396,11 +349,11 @@ public class MeetingTest {
     @Test
     public void testSetImportant_participants() {
         System.out.println("setImportant_participants");
-        List<String> important_participants = null;
-        Meeting instance = new Meeting();
-        instance.setImportant_participants(important_participants);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        List<String> new_important_participants = null;
+        List<String> temp = this.important_participants;
+        instance.setImportant_participants(new_important_participants);
+        assertEquals(new_important_participants, instance.getImportant_participants());
+        instance.setImportant_participants(temp);
     }
 
     /**
@@ -409,12 +362,9 @@ public class MeetingTest {
     @Test
     public void testGetStatus() {
         System.out.println("getStatus");
-        Meeting instance = new Meeting();
-        MeetingStatus expResult = null;
+        MeetingStatus expResult = this.status;
         MeetingStatus result = instance.getStatus();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -423,11 +373,9 @@ public class MeetingTest {
     @Test
     public void testSetStatus() {
         System.out.println("setStatus");
-        MeetingStatus status = null;
-        Meeting instance = new Meeting();
-        instance.setStatus(status);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        MeetingStatus new_status = MeetingStatus.canceled;
+        instance.setStatus(new_status);
+        assertEquals(new_status, instance.getStatus());
     }
 
     /**
@@ -436,12 +384,9 @@ public class MeetingTest {
     @Test
     public void testGetAgreed_time() {
         System.out.println("getAgreed_time");
-        Meeting instance = new Meeting();
-        DateRange expResult = null;
+        DateRange expResult = this.agreed_time;
         DateRange result = instance.getAgreed_time();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -450,11 +395,11 @@ public class MeetingTest {
     @Test
     public void testSetAgreed_time() {
         System.out.println("setAgreed_time");
-        DateRange agreed_time = null;
-        Meeting instance = new Meeting();
-        instance.setAgreed_time(agreed_time);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        DateRange new_agreed_time = null;
+        DateRange temp = this.agreed_time;
+        instance.setAgreed_time(new_agreed_time);
+        assertEquals(new_agreed_time, instance.getAgreed_time());
+        instance.setAgreed_time(temp);
     }
     
 }

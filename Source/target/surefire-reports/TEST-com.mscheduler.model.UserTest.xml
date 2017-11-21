@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="21" failures="6" name="com.mscheduler.model.UserTest" time="0.462" errors="0" skipped="0">
+<testsuite tests="21" failures="5" name="com.mscheduler.model.UserTest" time="12.552" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_102\jre\bin"/>
@@ -63,59 +63,18 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.mscheduler.model.UserTest" name="testCheckdel" time="0.099"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testCheckdel" time="0.24"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testSetPassword" time="0"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testGetPassword" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testLastAdmin" time="0">
-    <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.mscheduler.model.UserTest.testLastAdmin(UserTest.java:234)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-</failure>
-    <system-out>lastAdmin
-</system-out>
-  </testcase>
+  <testcase classname="com.mscheduler.model.UserTest" name="testLastAdmin" time="0"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testGetEmail" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testReadUserOne" time="0">
-    <failure message="expected:&lt;com.mscheduler.model.User@70a9f84e&gt; but was:&lt;com.mscheduler.model.User@130f889&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;com.mscheduler.model.User@70a9f84e&gt; but was:&lt;com.mscheduler.model.User@130f889&gt;
+  <testcase classname="com.mscheduler.model.UserTest" name="testReadUserOne" time="0.001">
+    <failure message="expected:&lt;com.mscheduler.model.User@133e16fd&gt; but was:&lt;com.mscheduler.model.User@51b279c9&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;com.mscheduler.model.User@133e16fd&gt; but was:&lt;com.mscheduler.model.User@51b279c9&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.mscheduler.model.UserTest.testReadUserOne(UserTest.java:186)
+	at com.mscheduler.model.UserTest.testReadUserOne(UserTest.java:185)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -151,13 +110,13 @@
     <system-out>readUserOne
 </system-out>
   </testcase>
-  <testcase classname="com.mscheduler.model.UserTest" name="testDel" time="0.133">
+  <testcase classname="com.mscheduler.model.UserTest" name="testDel" time="1.324">
     <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.mscheduler.model.UserTest.testDel(UserTest.java:285)
+	at com.mscheduler.model.UserTest.testDel(UserTest.java:284)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -193,15 +152,15 @@
     <system-out>del
 </system-out>
   </testcase>
-  <testcase classname="com.mscheduler.model.UserTest" name="testEncr" time="0.044"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testBooleanReadPass" time="0.009"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testBooleanReadUser" time="0.016">
+  <testcase classname="com.mscheduler.model.UserTest" name="testEncr" time="9.891"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testBooleanReadPass" time="0"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testBooleanReadUser" time="0.017">
     <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.mscheduler.model.UserTest.testBooleanReadUser(UserTest.java:161)
+	at com.mscheduler.model.UserTest.testBooleanReadUser(UserTest.java:160)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -240,33 +199,25 @@ Case 2 : User ada
 </system-out>
   </testcase>
   <testcase classname="com.mscheduler.model.UserTest" name="testGetName" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testReadUser" time="0.02"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testSetIsAdmin" time="0.012"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testReadAll" time="0.056">
-    <failure message="expected:&lt;...m
-user18@ms.com
-user[19@ms.com
+  <testcase classname="com.mscheduler.model.UserTest" name="testReadUser" time="0.982"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testSetIsAdmin" time="0.001"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testReadAll" time="0">
+    <failure message="expected:&lt;...s.com
 user20@ms.com
-email@gmail.com
-user1@ms.com]&gt; but was:&lt;...m
-user18@ms.com
-user[20@ms.com
-
+[ user1@ms.com ]&gt; but was:&lt;...s.com
+user20@ms.com
+[
 user1@ms.com
-]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;...m
-user18@ms.com
-user[19@ms.com
+]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;...s.com
 user20@ms.com
-email@gmail.com
-user1@ms.com]&gt; but was:&lt;...m
-user18@ms.com
-user[20@ms.com
-
+[ user1@ms.com ]&gt; but was:&lt;...s.com
+user20@ms.com
+[
 user1@ms.com
 ]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.mscheduler.model.UserTest.testReadAll(UserTest.java:274)
+	at com.mscheduler.model.UserTest.testReadAll(UserTest.java:273)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -306,7 +257,7 @@ user1@ms.com
     <failure message="expected:&lt;[1]&gt; but was:&lt;[0]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[1]&gt; but was:&lt;[0]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.mscheduler.model.UserTest.testCheckLoginDb(UserTest.java:217)
+	at com.mscheduler.model.UserTest.testCheckLoginDb(UserTest.java:216)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -346,8 +297,8 @@ Case 2 : User ada tapi bukan admin
   </testcase>
   <testcase classname="com.mscheduler.model.UserTest" name="testSetName" time="0"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testSaving" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testEditAll" time="0.001"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testEditOne" time="0"/>
-  <testcase classname="com.mscheduler.model.UserTest" name="testSetEmail" time="0"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testEditAll" time="0.03"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testEditOne" time="0.033"/>
+  <testcase classname="com.mscheduler.model.UserTest" name="testSetEmail" time="0.001"/>
   <testcase classname="com.mscheduler.model.UserTest" name="testIsIsAdmin" time="0"/>
 </testsuite>
