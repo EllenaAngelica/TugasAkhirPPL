@@ -1,6 +1,7 @@
 package com.mscheduler.model;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Date;
 import java.util.List;
 import org.junit.AfterClass;
@@ -34,13 +35,11 @@ public class DateRangeTest {
     @Test
     public void testDateToLocalDateTime() {
         System.out.println("dateToLocalDateTime");
-        Date date = null;
+        Date date = new Date(2017, 6, 5);
         DateRange instance = new DateRange();
-        LocalDateTime expResult = null;
+        LocalDateTime expResult = LocalDateTime.ofInstant(date.toInstant(), ZoneId.systemDefault());
         LocalDateTime result = instance.dateToLocalDateTime(date);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -49,13 +48,12 @@ public class DateRangeTest {
     @Test
     public void testLocalDateTimeToDate() {
         System.out.println("localDateTimeToDate");
-        LocalDateTime ldate = null;
+        Date date = new Date(2017, 6, 5);
+        LocalDateTime ldate = LocalDateTime.ofInstant(date.toInstant(), ZoneId.systemDefault());;
         DateRange instance = new DateRange();
-        Date expResult = null;
+        Date expResult = Date.from(ldate.atZone(ZoneId.systemDefault()).toInstant());;
         Date result = instance.localDateTimeToDate(ldate);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -64,12 +62,12 @@ public class DateRangeTest {
     @Test
     public void testGetDate_start() {
         System.out.println("getDate_start");
-        DateRange instance = new DateRange();
-        Date expResult = null;
+        Date date_start = new Date(2017, 6, 5);
+        Date date_end = new Date(2017, 6, 6);
+        DateRange instance = new DateRange(date_start, date_end);
+        Date expResult = date_start;
         Date result = instance.getDate_start();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -78,11 +76,12 @@ public class DateRangeTest {
     @Test
     public void testSetDate_start() {
         System.out.println("setDate_start");
-        Date date_start = null;
-        DateRange instance = new DateRange();
+        Date new_date_start = new Date(2017, 6, 4);
+        Date date_start = new Date(2017, 6, 5);
+        Date date_end = new Date(2017, 6, 6);
+        DateRange instance = new DateRange(date_start, date_end);
         instance.setDate_start(date_start);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(new_date_start, instance.getDate_start());
     }
 
     /**
@@ -91,12 +90,12 @@ public class DateRangeTest {
     @Test
     public void testGetDate_end() {
         System.out.println("getDate_end");
-        DateRange instance = new DateRange();
-        Date expResult = null;
+        Date date_start = new Date(2017, 6, 5);
+        Date date_end = new Date(2017, 6, 6);
+        DateRange instance = new DateRange(date_start, date_end);
+        Date expResult = date_end;
         Date result = instance.getDate_end();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -105,11 +104,12 @@ public class DateRangeTest {
     @Test
     public void testSetDate_end() {
         System.out.println("setDate_end");
-        Date date_end = null;
-        DateRange instance = new DateRange();
+        Date new_date_end = new Date(2017, 6, 7);
+        Date date_start = new Date(2017, 6, 5);
+        Date date_end = new Date(2017, 6, 6);
+        DateRange instance = new DateRange(date_start, date_end);
         instance.setDate_end(date_end);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(new_date_end, instance.getDate_end());
     }
 
     /**
@@ -118,12 +118,12 @@ public class DateRangeTest {
     @Test
     public void testLocalDateStart() {
         System.out.println("localDateStart");
-        DateRange instance = new DateRange();
-        LocalDateTime expResult = null;
+        Date date_start = new Date(2017, 6, 5);
+        Date date_end = new Date(2017, 6, 6);
+        DateRange instance = new DateRange(date_start, date_end);
+        LocalDateTime expResult = LocalDateTime.ofInstant(date_start.toInstant(), ZoneId.systemDefault());
         LocalDateTime result = instance.localDateStart();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -132,11 +132,11 @@ public class DateRangeTest {
     @Test
     public void testSetLocalDate_start() {
         System.out.println("setLocalDate_start");
-        LocalDateTime date_start = null;
+        Date date_start = new Date(2017, 6, 5);
         DateRange instance = new DateRange();
-        instance.setLocalDate_start(date_start);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        LocalDateTime ldt_date_start = LocalDateTime.ofInstant(date_start.toInstant(), ZoneId.systemDefault());
+        instance.setLocalDate_start(ldt_date_start);
+        assertEquals(ldt_date_start, instance.localDateStart());
     }
 
     /**
@@ -145,12 +145,13 @@ public class DateRangeTest {
     @Test
     public void testLocalDateEnd() {
         System.out.println("localDateEnd");
-        DateRange instance = new DateRange();
-        LocalDateTime expResult = null;
+        System.out.println("setLocalDate_start");
+        Date date_start = new Date(2017, 6, 5);
+        Date date_end = new Date(2017, 6, 6);
+        DateRange instance = new DateRange(date_start, date_end);
+        LocalDateTime expResult = LocalDateTime.ofInstant(date_end.toInstant(), ZoneId.systemDefault());;
         LocalDateTime result = instance.localDateEnd();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -159,13 +160,14 @@ public class DateRangeTest {
     @Test
     public void testSetLocalDate_end() {
         System.out.println("setLocalDate_end");
-        LocalDateTime date_end = null;
+        Date date_end = new Date(2017, 6, 5);
         DateRange instance = new DateRange();
-        instance.setLocalDate_end(date_end);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        LocalDateTime ldt_date_end = LocalDateTime.ofInstant(date_end.toInstant(), ZoneId.systemDefault());
+        instance.setLocalDate_end(ldt_date_end);
+        assertEquals(ldt_date_end, instance.localDateEnd());
     }
 
+    //=============================BAWAH BELUM
     /**
      * Test of length method, of class DateRange.
      */
@@ -176,8 +178,6 @@ public class DateRangeTest {
         int expResult = 0;
         int result = instance.length();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**

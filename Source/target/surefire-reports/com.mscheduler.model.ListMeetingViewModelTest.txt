@@ -1,11 +1,12 @@
 -------------------------------------------------------------------------------
-Test set: com.mscheduler.model.InvitationTest
+Test set: com.mscheduler.model.ListMeetingViewModelTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.004 sec <<< FAILURE!
-testAddAvailability(com.mscheduler.model.InvitationTest)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NullPointerException
-	at com.mscheduler.model.Invitation.addAvailability(Invitation.java:49)
-	at com.mscheduler.model.InvitationTest.testAddAvailability(InvitationTest.java:115)
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE!
+testSetMeeting_title(com.mscheduler.model.ListMeetingViewModelTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[New Meeting]> but was:<[meeting 1]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.mscheduler.model.ListMeetingViewModelTest.testSetMeeting_title(ListMeetingViewModelTest.java:81)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
