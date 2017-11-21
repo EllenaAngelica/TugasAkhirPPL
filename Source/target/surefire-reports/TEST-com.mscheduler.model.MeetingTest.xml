@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="28" failures="1" name="com.mscheduler.model.MeetingTest" time="2.698" errors="0" skipped="0">
+<testsuite tests="28" failures="1" name="com.mscheduler.model.MeetingTest" time="0.966" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_102\jre\bin"/>
@@ -65,11 +65,11 @@
   </properties>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testGetProposed_date_range" time="0"/>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testGetTitle" time="0"/>
-  <testcase classname="com.mscheduler.model.MeetingTest" name="testIsImportantParticipant" time="0.613"/>
-  <testcase classname="com.mscheduler.model.MeetingTest" name="testGetId" time="0.012"/>
+  <testcase classname="com.mscheduler.model.MeetingTest" name="testIsImportantParticipant" time="0"/>
+  <testcase classname="com.mscheduler.model.MeetingTest" name="testGetId" time="0.001"/>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testSetId" time="0"/>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testSetLocation" time="0.001"/>
-  <testcase classname="com.mscheduler.model.MeetingTest" name="testToString" time="2.068">
+  <testcase classname="com.mscheduler.model.MeetingTest" name="testToString" time="0.943">
     <failure message="expected:&lt;...Participant List : 
 [vip1
 vip2
@@ -132,15 +132,15 @@ Participant List : ]
 </system-out>
   </testcase>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testGetLocation" time="0"/>
-  <testcase classname="com.mscheduler.model.MeetingTest" name="testSetProposed_date_range" time="0.001"/>
+  <testcase classname="com.mscheduler.model.MeetingTest" name="testSetProposed_date_range" time="0"/>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testGetImportant_participants" time="0"/>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testGetAgreed_time" time="0"/>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testSetDuration" time="0"/>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testGetDuration" time="0"/>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testGetParticipants" time="0"/>
-  <testcase classname="com.mscheduler.model.MeetingTest" name="testGetNegotiation_deadline" time="0"/>
-  <testcase classname="com.mscheduler.model.MeetingTest" name="testIsNormalParticipant" time="0"/>
-  <testcase classname="com.mscheduler.model.MeetingTest" name="testSetImportant_participants" time="0"/>
+  <testcase classname="com.mscheduler.model.MeetingTest" name="testGetNegotiation_deadline" time="0.001"/>
+  <testcase classname="com.mscheduler.model.MeetingTest" name="testIsNormalParticipant" time="0.009"/>
+  <testcase classname="com.mscheduler.model.MeetingTest" name="testSetImportant_participants" time="0.001"/>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testSetParticipants" time="0"/>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testSetAgenda" time="0"/>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testGetPastDeadline" time="0"/>
@@ -149,7 +149,7 @@ Participant List : ]
   <testcase classname="com.mscheduler.model.MeetingTest" name="testGetStatus" time="0"/>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testIsPastDeadline" time="0"/>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testSetPastDeadline" time="0"/>
-  <testcase classname="com.mscheduler.model.MeetingTest" name="testSetAgreed_time" time="0"/>
+  <testcase classname="com.mscheduler.model.MeetingTest" name="testSetAgreed_time" time="0.001"/>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testSetNegotiation_deadline" time="0"/>
   <testcase classname="com.mscheduler.model.MeetingTest" name="testSetTitle" time="0"/>
 </testsuite>

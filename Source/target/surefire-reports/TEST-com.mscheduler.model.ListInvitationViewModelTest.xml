@@ -67,6 +67,6 @@
   <testcase classname="com.mscheduler.model.ListInvitationViewModelTest" name="testSetMeeting_id" time="0"/>
   <testcase classname="com.mscheduler.model.ListInvitationViewModelTest" name="testSetInvitation_status" time="0"/>
   <testcase classname="com.mscheduler.model.ListInvitationViewModelTest" name="testGetMeeting_title" time="0"/>
-  <testcase classname="com.mscheduler.model.ListInvitationViewModelTest" name="testGetInvitation_status" time="0.001"/>
+  <testcase classname="com.mscheduler.model.ListInvitationViewModelTest" name="testGetInvitation_status" time="0"/>
   <testcase classname="com.mscheduler.model.ListInvitationViewModelTest" name="testSetMeeting_title" time="0"/>
 </testsuite>

@@ -195,22 +195,16 @@ public class DateRangeTest {
         assertEquals(ldt_date_end, instance.localDateEnd());
     }
 
-    //=============================BAWAH BELUM
-
     /**
      * Test of length method, of class DateRange.
      */
     @Test
     public void testLength() {
         System.out.println("length");
-        DateRange instance = new DateRange();
-        int expResult = 0;
+        DateRange instance = new DateRange(new Date(2017, 6, 5),new Date(2017, 6, 6));
+        int expResult = 1;
         int result = instance.length();
         assertEquals(expResult, result);
-
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-
     }
 
     /**
@@ -224,8 +218,6 @@ public class DateRangeTest {
         boolean expResult = false;
         boolean result = instance.isBetweenAny(date);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -239,8 +231,6 @@ public class DateRangeTest {
         boolean expResult = false;
         boolean result = instance.isDateRangeBetween(date);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -254,8 +244,6 @@ public class DateRangeTest {
         boolean expResult = false;
         boolean result = instance.isDateBetween(date);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -264,12 +252,10 @@ public class DateRangeTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        DateRange instance = new DateRange();
-        String expResult = "";
+        DateRange instance = new DateRange(new Date(2017, 6, 5),new Date(2017, 6, 6));
+        String expResult = "5/6/2017 - 6/6/2017";
         String result = instance.toString();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -278,12 +264,10 @@ public class DateRangeTest {
     @Test
     public void testToString2() {
         System.out.println("toString2");
-        DateRange instance = new DateRange();
-        String expResult = "";
-        String result = instance.toString2();
+        DateRange instance = new DateRange(new Date(2017, 6, 5),new Date(2017, 6, 6));
+        String expResult = "5/6/2017 - 6/6/2017";
+        String result = instance.toString();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -297,8 +281,6 @@ public class DateRangeTest {
         boolean expResult = false;
         boolean result = instance.isOverlap(dr2);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -307,11 +289,9 @@ public class DateRangeTest {
     @Test
     public void testMergeDate() {
         System.out.println("mergeDate");
-        DateRange dr = null;
+        DateRange dr = new DateRange();
         DateRange instance = new DateRange();
         instance.mergeDate(dr);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -325,8 +305,6 @@ public class DateRangeTest {
         boolean expResult = false;
         boolean result = instance.isOverlapAny(conflicted_meeting_time);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
